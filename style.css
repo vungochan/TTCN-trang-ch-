@@ -329,3 +329,188 @@ body {
 .journal-tech span {
   font-weight: bold;
 }
+/* ANIMAL SCIENCE */
+.container-ANIMAL {
+  max-width: 1500px;
+  margin: 20 auto;
+  padding: 30px;
+}
+.collapse-toggle {
+  display: none;
+}
+.header-ANIMAL {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+}
+.header-ANIMAL h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding-right: 30px;
+  text-align: left;
+}
+.arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+.collapse-toggle:checked + .header-ANIMAL {
+  padding: 12px 20px;
+}
+
+.collapse-toggle:checked + .header-ANIMAL h1 {
+  font-size: 16px;
+}
+
+.collapse-toggle:checked + .header-ANIMAL .arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.collapse-toggle:checked ~ .content-ANIMAL {
+  display: none;
+}
+.content-ANIMAL {
+  padding: 25px;
+}
+
+.article-ANIMAL {
+  margin-bottom: 0;
+}
+.article-title-ANIMAL {
+  font-size: 16px;
+  color: blue;
+  margin-bottom: 8px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.article-authors-ANIMAL {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+.article-meta-ANIMAL {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.article-links-ANIMAL {
+  display: flex;
+  gap: 15px;
+}
+.article-links-ANIMAL .link-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.article-links-ANIMAL .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+.article-links-ANIMAL .btn:hover {
+  color: #f1c40f;
+}
+.fa-solid {
+  color: #666;
+  font-size: 14px;
+}
+.view-all-issues {
+  max-width: 1500px;
+  margin: 20px auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.view-all-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #4a6491;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-link:hover {
+  background-color: #3a5481;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  background-color: #2c5f2d;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1500px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 14px;
+}
