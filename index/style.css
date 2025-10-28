@@ -126,7 +126,7 @@ body {
 }
 /* Hero Section */
 .hero {
-  background-image: url(./img/2018-0402hvnn002.jpg);
+  background-image: url(../img/2018-0402hvnn002.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@ body {
 .section-title {
   font-size: 28px;
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
   margin-bottom: 25px;
   padding-bottom: 10px;
   border-bottom: 2px solid #3498db;
@@ -237,7 +237,7 @@ body {
 }
 .announcement-card a {
   text-decoration: none;
-  color: aqua;
+  color: blue;
 }
 .announcement-card a:hover {
   color: #fdd835;
@@ -340,7 +340,7 @@ body {
 }
 .header-ANIMAL {
   display: block;
-  color: white;
+  color: black;
   padding: 15px 20px;
   cursor: pointer;
   position: relative;
@@ -412,7 +412,7 @@ body {
 .article-links-ANIMAL .btn {
   display: inline-block;
   padding: 6px 12px;
-  color: white;
+  color: black;
   text-decoration: none;
   border-radius: 3px;
   font-size: 13px;
