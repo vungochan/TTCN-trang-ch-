@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Privacy-Statement.css" />
+    <link rel="stylesheet" href="login.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>Privacy Statement</title>
+    <title>login</title>
   </head>
   <body>
-    <!-- navbar -->
+        <!-- navbar -->
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -35,17 +35,15 @@
               </li>
             </ul>
           </li>
-          <li class="curent"><a href="../current/current.html">curent</a></li>
+          <li class="curent"><a href="./current.html">curent</a></li>
           <li class="archived">
             <a href="../Archives/Archives.html">archived</a>
           </li>
           <li class="guidelines">
             <a href="../index.html">guidelines ▾</a>
             <ul class="guidelines-menu">
-              <li><a href="../For Authors/For Authors.html">for authors</a></li>
-              <li>
-                <a href="../for reviewers/for reviewers.html">for reviewers</a>
-              </li>
+              <li><a href="./For Authors.html">for authors</a></li>
+              <li><a href="./for reviewers.html">for reviewers</a></li>
               <li><a href="#">for editors</a></li>
               <li>
                 <a href="../Publication Process/Publication Process.html"
@@ -81,7 +79,7 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="#" class="btn">Register</a>
-        <a href="../login/login.html" class="btn">Login</a>
+        <a href="./login.html" class="btn">Login</a>
       </div>
     </div>
     <!-- end navbar -->
@@ -89,27 +87,46 @@
     <div class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <p>Privacy Statement</p>
+          <p>LOGIN</p>
         </div>
       </div>
     </div>
     <!-- end Hero Section -->
     <!-- Phần Breadcrumb  -->
     <div class="breadcrumb">
-      <a href="../index.html">Home</a> / <span> Privacy Statement</span>
+      <a href="../index.html">Home</a> /
+      <span> login</span>
     </div>
     <!--end Phần Breadcrumb  -->
-    <!-- Phần Nội dung chính -->
-    <div class="container">
-      <div class="article-content">
-        <p>
-          The names and email addresses entered in this journal site will be
-          used exclusively for the stated purposes of this journal and will not
-          be made available for any other purpose or to any other party.
-        </p>
-      </div>
+    <!-- login -->
+    <div class="login-container">
+      <form class"login-form">
+        <h2>Login</h2>
+
+        <div class="form-group">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <a href="#" class="forgot-password">Forgot your password?</a>
+
+        <div class="form-check">
+          <input type="checkbox" id="keep-logged-in" checked />
+          <label for="keep-logged-in">Keep me logged in</label>
+        </div>
+
+        <button type="submit" class="btn-login">LOGIN</button>
+        <button type="button" class="btn-register" onclick="window.location.href='../Register/Register.html'">
+          REGISTER
+        </button>
+      </form>
     </div>
-    <!-- end nội dung chính -->
+    <!-- end login -->
     <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
