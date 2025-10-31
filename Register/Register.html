@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="Register.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>login</title>
+    <title>Register</title>
   </head>
   <body>
         <!-- navbar -->
@@ -79,7 +79,7 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="../Register/Register.html" class="btn">Register</a>
-        <a href="./login.html" class="btn">Login</a>
+        <a href="../login/login.html" class="btn">Login</a>
       </div>
     </div>
     <!-- end navbar -->
@@ -87,7 +87,7 @@
     <div class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <p>LOGIN</p>
+          <p>Register</p>
         </div>
       </div>
     </div>
@@ -95,38 +95,136 @@
     <!-- Phần Breadcrumb  -->
     <div class="breadcrumb">
       <a href="../index.html">Home</a> /
-      <span> login</span>
+      <span> Register</span>
     </div>
     <!--end Phần Breadcrumb  -->
-    <!-- login -->
-    <div class="login-container">
-      <form class"login-form">
-        <h2>Login</h2>
+    <!-- Register -->
+    <div class="register-container">
+      <form class="register-form" action="#" method="post">
+        <h2>Register</h2>
 
         <div class="form-group">
-          <label for="username">Username or Email</label>
+          <label for="givenName" class="required">Given Name</label>
+          <input type="text" id="givenName" name="givenName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="familyName" class="required">Family Name</label>
+          <input type="text" id="familyName" name="familyName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="affiliation" class="required">Affiliation</label>
+          <input type="text" id="affiliation" name="affiliation" required />
+        </div>
+
+        <div class="form-group">
+          <label for="reviewerResearch" class="required"
+            >Area of reviewer's research</label
+          >
+          <input
+            type="text"
+            id="reviewerResearch"
+            name="reviewerResearch"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="country" class="required">Country</label>
+          <input type="text" id="country" name="country" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="required">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="required">Username</label>
           <input type="text" id="username" name="username" required />
+          <div class="form-hint">
+            The username must contain only lowercase letters, numbers, and
+            hyphens/underscores.
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password" class="required">Password</label>
           <input type="password" id="password" name="password" required />
+          <div class="form-hint">The password must be at least 6 characters.</div>
         </div>
 
-        <a href="#" class="forgot-password">Forgot your password?</a>
-
-        <div class="form-check">
-          <input type="checkbox" id="keep-logged-in" checked />
-          <label for="keep-logged-in">Keep me logged in</label>
+        <div class="form-group">
+          <label for="repeatPassword" class="required">Repeat password</label>
+          <input
+            type="password"
+            id="repeatPassword"
+            name="repeatPassword"
+            required
+          />
         </div>
 
-        <button type="submit" class="btn-login">LOGIN</button>
-        <button type="button" class="btn-register" onclick="window.location.href='../Register/Register.html'">
-          REGISTER
-        </button>
+        <div class="form-checkbox-group">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="agreePrivacy"
+              name="agreePrivacy"
+              value="1"
+              required
+            />
+            <label for="agreePrivacy"
+              >Yes, I agree to have my data collected and stored according to the
+              <a href="../Privacy Statement/Privacy-Statement.html"
+                >privacy statement</a
+              >.</label
+            >
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="notify" name="notify" value="1" />
+            <label for="notify"
+              >Yes, I would like to be notified of new publications and
+              announcements.</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="contactReview"
+              name="contactReview"
+              value="1"
+            />
+            <label for="contactReview"
+              >Yes, I would like to be contacted with requests to review
+              submissions to this journal.</label
+            >
+          </div>
+        </div>
+
+        <div class="recaptcha-placeholder">
+            <label for="robot-check"><input type="checkbox" id="robot-check"> I'm not a robot</label>
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo">
+        </div>
+
+        <div class="form-group" style="margin-top: 30px">
+          <button type="submit" class="btn-green">Register</button>
+          <button
+            type="button"
+            class="btn-white"
+            onclick="window.location.href='../Login/Login.html'"
+          >
+            Login
+          </button>
+        </div>
       </form>
     </div>
-    <!-- end login -->
+    <!-- end Register -->
     <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
@@ -152,5 +250,6 @@
       </div>
     </div>
     <!-- end Footer -->
+    </body>
   </body>
 </html>
