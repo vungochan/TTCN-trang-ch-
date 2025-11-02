@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="Search.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>login</title>
+    <title>Search</title>
   </head>
   <body>
-        <!-- navbar -->
+    <!-- navbar -->
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -43,7 +43,9 @@
             <a href="../index.html">guidelines ▾</a>
             <ul class="guidelines-menu">
               <li><a href="../For Authors/For Authors.html">for authors</a></li>
-              <li><a href="../for reviewers/for reviewers.html">for reviewers</a></li>
+              <li>
+                <a href="../for reviewers/for reviewers.html">for reviewers</a>
+              </li>
               <li><a href="#">for editors</a></li>
               <li>
                 <a href="../Publication Process/Publication Process.html"
@@ -61,8 +63,14 @@
               </li>
             </ul>
           </li>
-          <li class="editorial-board"><a href="../Editorial Team/Editorial Team.html">editorial board</a></li>
-          <li class="waiting-to-publish"><a href="../Waiting to Publish/Waiting to Publish.html">waiting to publish</a></li>
+          <li class="editorial-board">
+            <a href="../Editorial Team/Editorial Team.html">editorial board</a>
+          </li>
+          <li class="waiting-to-publish">
+            <a href="../Waiting to Publish/Waiting to Publish.html"
+              >waiting to publish</a
+            >
+          </li>
           <li class="contact"><a href="#">contact</a></li>
         </ul>
       </div>
@@ -79,7 +87,7 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="../Register/Register.html" class="btn">Register</a>
-        <a href="./login.html" class="btn">Login</a>
+        <a href="../login/login.html" class="btn">Login</a>
       </div>
     </div>
     <!-- end navbar -->
@@ -87,7 +95,7 @@
     <div class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <p>LOGIN</p>
+          <p>For Reviewers</p>
         </div>
       </div>
     </div>
@@ -95,38 +103,49 @@
     <!-- Phần Breadcrumb  -->
     <div class="breadcrumb">
       <a href="../index.html">Home</a> /
-      <span> login</span>
+      <span> For Reviewers</span>
     </div>
     <!--end Phần Breadcrumb  -->
-    <!-- login -->
-    <div class="login-container">
-      <form class"login-form">
-        <h2>Login</h2>
+    <!-- search -->
+    <div class="search-container">
+      <h1 class="search-title">Search Query</h1>
 
-        <div class="form-group">
-          <label for="username">Username or Email</label>
-          <input type="text" id="username" name="username" required />
+      <!-- Ô tìm kiếm tổng -->
+      <div class="general-search-group">
+        <label class="filter-label">General Search</label>
+        <input
+          type="text"
+          class="filter-input general-search-input"
+          placeholder="Enter search keywords..."
+        />
+      </div>
+
+      <h2 class="advanced-filters">Advanced filters</h2>
+
+      <div class="filter-row">
+        <div class="filter-group">
+          <label class="filter-label">Published After</label>
+          <input type="date" class="filter-input" />
         </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
+        <div class="filter-group">
+          <label class="filter-label">Published Before</label>
+          <input type="date" class="filter-input" />
         </div>
+      </div>
 
-        <a href="#" class="forgot-password">Forgot your password?</a>
+      <div class="filter-group">
+        <label class="filter-label">By Author</label>
+        <input
+          type="text"
+          class="filter-input"
+          placeholder="Enter author name"
+        />
+      </div>
 
-        <div class="form-check">
-          <input type="checkbox" id="keep-logged-in" checked />
-          <label for="keep-logged-in">Keep me logged in</label>
-        </div>
-
-        <button type="submit" class="btn-login">LOGIN</button>
-        <button type="button" class="btn-register" onclick="window.location.href='../Register/Register.html'">
-          REGISTER
-        </button>
-      </form>
+      <button class="search-button">SEARCH</button>
     </div>
-    <!-- end login -->
+    <!-- end search -->
     <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
